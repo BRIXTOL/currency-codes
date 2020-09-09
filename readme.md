@@ -1,6 +1,6 @@
-# Country Code to Currency Code Mappings
+## @brixtol/currency-codes
 
-Country codes (_[3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)) to Currency [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217#Active_codes) code mappings used by the [Brixtol Textiles](https://www.brixtoltextiles.com) internal API when dealing with pricing and currency conversions. Supports all 249 countries to currency maps.
+Country codes ([3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)) to Currency ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)) code mappings used by the [Brixtol Textiles](https://www.brixtoltextiles.com) internal API when dealing with pricing and currency conversions. Supports all 249 countries to currency maps.
 
 Minified: 2.23 KB <br>
 Gzipped: 1.08 KB
