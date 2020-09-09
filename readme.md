@@ -7,19 +7,19 @@ Gzipped: 1.08 KB
 
 ### Install
 
-Install with [pnpm](https://pnpm.js.org/en/cli/install)
+[pnpm](https://pnpm.js.org/en/cli/install)
 
 ```cli
 pnpm i @brixtol/currency-codes
 ```
 
-Install with [npm](https://www.npmjs.com/)
+[npm](https://www.npmjs.com/)
 
 ```cli
 npm install @brixtol/currency-codes
 ```
 
-Install with [Yarn](https://yarnpkg.com/)
+[Yarn](https://yarnpkg.com/)
 
 ```cli
 yarn add @brixtol/currency-codes
