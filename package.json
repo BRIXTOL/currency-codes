@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/brixtol/currency-codes"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "watch": "rollup -c -w",
     "build": "rollup -c --environment prod",
