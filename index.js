@@ -1,3 +1,4 @@
+
 export default code => ({
   AD: 'EUR',
   AE: 'AED',
@@ -131,7 +132,7 @@ export default code => ({
   LK: 'LKR',
   LR: 'LRD',
   LS: 'LSL',
-  LT: 'LTL',
+  LT: 'EUR',
   LU: 'EUR',
   LV: 'LVL',
   LY: 'LYD',
