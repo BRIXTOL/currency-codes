@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-codes",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mappings for 2 letter country code to 3 letter currency code",
   "author": "Νίκος Σαβίδης <nicos@brixtoltextiles.com>",
   "license": "MIT",
@@ -25,7 +25,8 @@
     "dev": "rollup -c -w",
     "build": "rollup -c --environment prod",
     "package": "cd versions; pnpm pack ../ && cd ..",
-    "test": "ava --watch --verbose"
+    "test": "ava --watch --verbose",
+    "postpublish": "npm publish --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
   },
   "ava": {
     "require": [
