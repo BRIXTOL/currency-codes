@@ -15,9 +15,6 @@
   "bugs": {
     "url": "https://github.com/brixtol/currency-codes"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "engines": {
     "pnpm": ">=5"
   },
