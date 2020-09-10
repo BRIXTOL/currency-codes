@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-codes",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Mappings for 2 letter country code to 3 letter currency code",
   "author": "Νίκος Σαβίδης <nicos@brixtoltextiles.com>",
   "license": "MIT",
@@ -18,10 +18,13 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
+  "engines": {
+    "pnpm": ">=5"
+  },
   "scripts": {
-    "watch": "rollup -c -w",
+    "dev": "rollup -c -w",
     "build": "rollup -c --environment prod",
-    "pack": "cd versions; pnpm pack ../ && cd ..",
+    "package": "cd versions; pnpm pack ../ && cd ..",
     "test": "ava --watch --verbose"
   },
   "ava": {
@@ -36,7 +39,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^14.0.0",
     "esm": "^3.2.25",
+    "rollup": "^2.26.11",
     "rollup-plugin-filesize": "^9.0.2",
     "rollup-plugin-terser": "^6.1.0"
+  },
+  "peerDependencies": {
+    "rollup": "^2.26.11"
   }
 }
