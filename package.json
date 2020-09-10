@@ -7,7 +7,6 @@
   "main": "./package/currency-codes.cjs.js",
   "module": "./package/currency-codes.es.js",
   "types": "index.d.ts",
-  "private": false,
   "repository": {
     "type": "git",
     "url": "https://github.com/brixtol/currency-codes"
