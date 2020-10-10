@@ -44,7 +44,6 @@ const EUR = currency("nl");
 ### Related
 
 - [@brixtol/currency-symbols](https://github.com/brixtol/currency-symbols)
-- [@brixtol/locale-mappings](https://github.com/brixtol/locale-mappings)
 
 ### License
 
