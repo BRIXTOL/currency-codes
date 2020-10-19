@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-codes",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Mappings for 2 letter country code to 3 letter currency code",
   "author": "Νίκος Σαβίδης <nicos@brixtoltextiles.com>",
   "license": "MIT",
