@@ -13,7 +13,7 @@ Gzipped: 1.08 KB
 pnpm i @brixtol/currency-codes
 ```
 
-##### Boomers / Sheep Alternatives
+##### Boomer / Sheep Alternatives
 
 [npm](https://www.npmjs.com/)
 
