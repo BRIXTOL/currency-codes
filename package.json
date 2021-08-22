@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-codes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Mappings for 2 letter (Alpha 2) country codes to 3 letter currency code.",
   "author": {
     "name": "Νίκος Σαβίδης ",
