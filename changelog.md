@@ -2,6 +2,16 @@
 
 ### 1.0.0
 
+##### BREAKING CHANGE
+
+- Now uses named export `getCurrency(` instead of default export
+
+```js
+import { getCurrency } from "@brixtol/currencies";
+```
+
+### 0.1.5
+
 - Converted project to TypeScript
 - Supported typings + JSDoc descriptions
 - Provided a const enum export
