@@ -13,7 +13,7 @@ Gzipped: 1.08 KB
 pnpm i @brixtol/currency-codes
 ```
 
-##### Boomer / Sheep Alternatives
+> Because pnpm is dope and does dope shit.
 
 [npm](https://www.npmjs.com/)
 
@@ -34,20 +34,51 @@ You can pass in a country code that is lowercase, uppercase or a mixture of both
 ```javascript
 import { getCurrency } from "@brixtol/currency-codes";
 
-// Country code SE (Sweden) - Swedish Krona
-const SEK = getCurrency("SE");
+// Country code SE (Sweden)
+const sek = getCurrency("SE"); // SEK
 
-// Country code NL (Netherlands)- Euros
-const EUR = getCurrency("nl");
+// Country code NL (Netherlands)
+const eur = getCurrency("nl"); // EUR
+
+// Country code US (United States)
+const eur = getCurrency("uS"); // USD
 
 // ....
 ```
 
+The module also exposes the raw mappings and interface on the export. The mappings object is provided **read only** using [Object.freeze](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze). The raw mappings are annotated with JSDoc comments so when using an editor that supports intellisense (ie: vscode) you will receive the country and currency name in completions and hovers.
+
+```javascript
+import { Currencies, ICurrencies } from "@brixtol/currency-codes";
+
+// Mapping Object
+
+Currencies.SE; // SEK
+Currencies.NL; // EUR
+Currencies.RU; // RUB
+
+// Interface
+
+ICurrencies.SE; // SEK
+ICurrencies.NL; // EUR
+ICurrencies.RU; // RUB
+```
+
+> The interface is identical to the mapping.
+
 ### Related
 
+Currency code to currency symbol mappings:
+
 - [@brixtol/currency-symbols](https://github.com/brixtol/currency-symbols)
-- [@brixtol/currency-symbol-placements](https://github.com/brixtol/currency-symbol-placements)
+
+Country code to country name mappings:
+
 - [@brixtol/country-names](https://github.com/brixtol/country-names)
+
+Currency code to [currency.js](https://github.com/scurker/currency.js) symbol placement mappings:
+
+- [@brixtol/currency-symbol-placements](https://github.com/brixtol/currency-symbol-placements)
 
 ### License
 
