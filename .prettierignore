@@ -1,1 +1,4 @@
+# DISABLE
 *.ts
+*.js
+*.mjs
