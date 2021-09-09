@@ -55,7 +55,7 @@
   },
   "devDependencies": {
     "@brixtol/eslint-config": "^1.0.1",
-    "@brixtol/prettier-config": "^1.0.3",
+    "@brixtol/prettier-config": "workspace:^1.1.0",
     "@brixtol/rollup-config": "workspace:^1.2.0",
     "@brixtol/tsconfig": "^1.0.0",
     "esm": "^3.2.25",
