@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.1.1 - 09/09/2021
+
+Allow `string` type to be passed as parameter value to function and replaced development rollup dependencies to use [@brixtol/rollup-config](https://github.com/BRIXTOL/rollup-config)
+
 ### 1.1.0 - 23/08/2021
 
 Mostly development workspace adjustments. The module now exposes the mapping object on the export in addition to the matching function export.
@@ -26,9 +30,9 @@ First major version, ships with a breaking change. The default export is no long
 #### Named export
 
 ```js
-import { getCurrency } from "@brixtol/currencies";
+import { getCurrency } from '@brixtol/currencies';
 
-const currency = getCurrency("SE"); // SEK
+const currency = getCurrency('SE'); // SEK
 ```
 
 #### Breakdown

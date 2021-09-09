@@ -750,4 +750,6 @@ export const Currencies: ICurrencies = Object.freeze({
  *
  * _Accepts either uppercase or lowercase_
  */
-export const getCurrency = (code: keyof ICurrencies): string => Currencies[code.toUpperCase()];
+export const getCurrency = (
+  code: keyof ICurrencies | string
+): string => Currencies[code.toUpperCase()];
