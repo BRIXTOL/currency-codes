@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.2.0 - 21/10/2021
+
+- Updated rollup-config
+
 ### 1.1.1 - 09/09/2021
 
 Allow `string` type to be passed as parameter value to function and replaced development rollup dependencies to use [@brixtol/rollup-config](https://github.com/BRIXTOL/rollup-config)

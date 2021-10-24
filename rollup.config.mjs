@@ -21,7 +21,7 @@ export default rollup(
     ],
     plugins: env.if('dev')(
       [
-        plugin.ts({ useTsconfigDeclarationDir: true, typescript }),
+        plugin.ts2({ useTsconfigDeclarationDir: true, typescript }),
         plugin.commonjs()
       ]
     )(
