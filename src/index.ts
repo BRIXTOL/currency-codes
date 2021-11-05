@@ -1,4 +1,4 @@
-export interface ICurrencies {
+interface ICurrencies {
   /** Andorra (Euro) */
   AD: 'EUR',
   /** United Arab Emirates (UAE Dirham) */
@@ -495,6 +495,35 @@ export interface ICurrencies {
   ZW: 'ZWL',
 };
 
+/**
+ * Literal Union Helper
+ *
+ * Allows string types to be passed while respecting
+ * intellisense completions.
+ */
+type Union<T, B extends | null | undefined | string | symbol> = T | (B & {_?: never})
+
+/**
+ * Object Values
+ *
+ * Creates a union of currency code values used as a return
+ * type in function export.
+ */
+type Values<T, V extends keyof T = keyof T> = T[V];
+
+/**
+ * Country Name
+ *
+ * Extracts the country name from the ICountries interface
+ * which is use as the Return type reference
+ */
+type CurrencyCode<ISO extends keyof ICurrencies> = Values<ICurrencies, ISO>
+
+/**
+ * Country code Keys (3166-1 alpha-2)
+ */
+type CurrencyCodes<T = ICurrencies> = Values<T>
+
 export const Currencies: ICurrencies = Object.freeze({
   AD: 'EUR',
   AE: 'AED',
@@ -746,10 +775,24 @@ export const Currencies: ICurrencies = Object.freeze({
 });
 
 /**
- * 2 Letter (Alpha 2) country code
+ * Get Currency
  *
- * _Accepts either uppercase or lowercase_
+ * Requires a 2 Letter (ISO 3166-1 alpha-2) country
+ * code to be passed and returns the 3 letter
+ * currency code (ISO 4217) of the country.
+ *
+ * > _Accepts either uppercase, lowercase or
+ * or a combination of either_
  */
-export const getCurrency = (
-  code: keyof ICurrencies | string
-): string => Currencies[code.toUpperCase()];
+function getCurrency <ISO extends keyof ICurrencies> (
+  code: Union<ISO, string>
+): CurrencyCode<ISO> {
+
+  const currency = Currencies[code.toUpperCase()];
+
+  if (!currency) throw new Error(`"${code}" is an invalid ISO country code`);
+
+  return currency;
+}
+
+export { CurrencyCodes, ICurrencies, getCurrency };
