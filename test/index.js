@@ -13,6 +13,15 @@ test('Country code', (t) => {
 
 });
 
+test('Country code is invalid', (t) => {
+
+  t.throws(() => getCurrency('WW'), {
+    message: '"WW" is an invalid ISO country code'
+  });
+
+  t.pass();
+});
+
 test('Country code in uppercase', (t) => {
 
   t.is(getCurrency('SE'), 'SEK');
