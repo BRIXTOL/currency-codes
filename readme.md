@@ -32,16 +32,16 @@ yarn add @brixtol/currency-codes
 You can pass in a country code that is lowercase, uppercase or a mixture of both.
 
 ```javascript
-import { getCurrency } from "@brixtol/currency-codes";
+import { getCurrency } from '@brixtol/currency-codes';
 
 // Country code SE (Sweden)
-const sek = getCurrency("SE"); // SEK
+const sek = getCurrency('SE'); // SEK
 
 // Country code NL (Netherlands)
-const eur = getCurrency("nl"); // EUR
+const eur = getCurrency('nl'); // EUR
 
 // Country code US (United States)
-const eur = getCurrency("uS"); // USD
+const eur = getCurrency('uS'); // USD
 
 // ....
 ```
@@ -49,7 +49,7 @@ const eur = getCurrency("uS"); // USD
 The module also exposes the raw mappings and interface on the export. The mappings object is provided **read only** using [Object.freeze](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze). The raw mappings are annotated with JSDoc comments so when using an editor that supports intellisense (ie: vscode) you will receive the country and currency name in completions and hovers.
 
 ```javascript
-import { Currencies, ICurrencies } from "@brixtol/currency-codes";
+import { Currencies, ICurrencies, CurrencyCodes } from '@brixtol/currency-codes';
 
 // Mapping Object
 
@@ -62,6 +62,10 @@ Currencies.RU; // RUB
 ICurrencies.SE; // SEK
 ICurrencies.NL; // EUR
 ICurrencies.RU; // RUB
+
+// Literal Union
+
+CurrencyCodes; // SEK | EUR | RUB etc etc
 ```
 
 > The interface is identical to the mapping.
@@ -82,7 +86,7 @@ Currency code to [currency.js](https://github.com/scurker/currency.js) symbol pl
 
 ### License
 
-Licensed under [MIT](#LICENCE)
+Licensed under [MIT](#LICENSE)
 
 ---
 
