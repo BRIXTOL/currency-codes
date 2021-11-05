@@ -1,5 +1,14 @@
 # Changelog
 
+### 1.2.1 - 05/11/2021
+
+Improved type support and provided error handling for when invalid or incorrect ISO codes are provided.
+
+- Added literal union support for argument `code`
+- Added type support for currency code return
+- Added error support when an unmatched ISO is provided
+- Added Currency Codes Union type export available from `CurrencyCodes`
+
 ### 1.2.0 - 21/10/2021
 
 - Updated rollup-config
