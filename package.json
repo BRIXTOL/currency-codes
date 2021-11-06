@@ -55,11 +55,15 @@
     "concurrency": 5
   },
   "devDependencies": {
+    "@brixtol/country-names": "workspace:^1.2.1",
     "@brixtol/eslint-config": "^1.0.1",
     "@brixtol/prettier-config": "workspace:^1.2.0",
     "@brixtol/rollup-config": "workspace:^1.4.0",
     "@brixtol/tsconfig": "^1.0.0",
     "esm": "^3.2.25",
     "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "@brixtol/tsutils": "workspace:^1.0.0"
   }
 }
