@@ -1,6 +1,6 @@
 {
   "name": "@brixtol/currency-codes",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Mappings for 2 letter (Alpha 2) country codes to 3 letter currency code.",
   "author": {
     "name": "Νίκος Σαβίδης ",
@@ -43,7 +43,10 @@
   "prettier": "@brixtol/prettier-config",
   "eslintConfig": {
     "ignorePatterns": "package",
-    "extends": "@brixtol/eslint-config"
+    "extends": "@brixtol/eslint-config",
+    "rules": {
+      "no-unused-vars": "off"
+    }
   },
   "ava": {
     "require": [
@@ -55,15 +58,16 @@
     "concurrency": 5
   },
   "devDependencies": {
-    "@brixtol/country-names": "workspace:^1.2.1",
     "@brixtol/eslint-config": "^1.0.1",
-    "@brixtol/prettier-config": "workspace:^1.2.0",
-    "@brixtol/rollup-config": "workspace:^1.4.0",
+    "@brixtol/prettier-config": "^1.2.1",
+    "@brixtol/rollup-config": "^1.4.0",
     "@brixtol/tsconfig": "^1.0.0",
+    "ava": "^3.15.0",
     "esm": "^3.2.25",
-    "typescript": "^4.3.5"
+    "typescript": "^4.5.2"
   },
   "dependencies": {
-    "@brixtol/tsutils": "workspace:^1.0.0"
+    "@brixtol/country-names": "^1.2.1",
+    "@brixtol/tsutils": "^1.4.1"
   }
 }
