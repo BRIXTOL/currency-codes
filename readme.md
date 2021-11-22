@@ -2,15 +2,15 @@
 
 Country codes ([3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements)) to Currency ([ISO 4217](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)) code mappings used by the [Brixtol Textiles](https://www.brixtoltextiles.com) internal API when dealing with pricing and currency conversions. Supports all 249 countries to currency maps.
 
-Minified: 2.23 KB <br>
-Gzipped: 1.08 KB
+Minified: 2.35 KB <br>
+Gzipped: 1.2 KB
 
 ### Install
 
 [pnpm](https://pnpm.js.org/en/cli/install)
 
 ```cli
-pnpm i @brixtol/currency-codes
+pnpm add @brixtol/currency-codes
 ```
 
 > Because pnpm is dope and does dope shit.
@@ -49,7 +49,11 @@ const eur = getCurrency('uS'); // USD
 The module also exposes the raw mappings and interface on the export. The mappings object is provided **read only** using [Object.freeze](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze). The raw mappings are annotated with JSDoc comments so when using an editor that supports intellisense (ie: vscode) you will receive the country and currency name in completions and hovers.
 
 ```javascript
-import { Currencies, ICurrencies, CurrencyCodes } from '@brixtol/currency-codes';
+import {
+  Currencies,
+  ICurrencies,
+  CurrencyCodes
+} from '@brixtol/currency-codes';
 
 // Mapping Object
 
@@ -71,6 +75,10 @@ CurrencyCodes; // SEK | EUR | RUB etc etc
 > The interface is identical to the mapping.
 
 ### Related
+
+Static GeoIP utility
+
+- [@brixtol/i18n](https://github.com/brixtol/i18n)
 
 Currency code to currency symbol mappings:
 
